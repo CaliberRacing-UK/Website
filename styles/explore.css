@@ -1,0 +1,54 @@
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .explore-wrapper {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .model-view {
+      flex: 1;
+      background: var(--secondary);
+      overflow: hidden;
+    }
+
+    .specs-panel {
+      width: 350px;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: var(--primary-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      backdrop-filter: blur(6px);
+    }
+
+    .specs-panel::after {
+      content: '';
+      flex-shrink: 0;
+      height: 4rem;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 768px) {
+      .explore-wrapper {
+        flex-direction: column;
+      }
+
+      .model-view {
+        height: 50vh;
+      }
+
+      .specs-panel {
+        height: 50vh;
+        width: 100%;
+        background-color: var(--primary);
+      }
+    }

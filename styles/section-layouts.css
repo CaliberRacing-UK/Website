@@ -1,0 +1,41 @@
+/* Large screens (default layout) */
+@media (min-width: 1027px) {
+  #about .icons {
+    --min-width: 120px; /* wider icons */
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #about .section-flex {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  #about .text {
+    order: 2;
+    flex: 1 1 50%;
+  }
+  #about .image {
+    order: 1;
+    flex: 1 1 40%;
+  }
+  #about .stem-icons {
+    margin-top: 1rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 1026px) {
+  #about .icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #about .section-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #about .image,
+  #about .text,
+  #about .stem-icons {
+    order: unset;
+    flex: unset;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

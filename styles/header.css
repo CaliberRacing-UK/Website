@@ -1,0 +1,172 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: var(--primary);
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px var(--shadow);
+  user-select: none;
+}
+
+/* =============================
+   Logo
+============================= */
+.logo-area {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+  height: var(--logo-height);
+  cursor: pointer;
+}
+
+.logo-container img {
+  height: 100%;
+  display: block;
+}
+
+.logo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.logo-container:hover .logo-hover { opacity: 1; }
+.logo-container:hover .logo-default { opacity: 0; }
+
+.hover-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--primary-dark);
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: width 0.4s ease-out, opacity 0.2s ease 0.1s;
+  border-radius: 0 6px 6px 0;
+}
+
+/* =============================
+   Navigations
+============================= */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+nav a {
+  position: relative;
+  color: var(--tertiary);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25em 0;
+  font-size: var(--fs-nav);
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: white;
+  transform: scale(1.2);
+  outline: none;
+}
+
+nav a:hover::after,
+nav a:focus-visible::after {
+  width: 100%;
+  left: 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around; /* evenly space lines */
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  background: none; /* no background box */
+  border: none; /* no border */
+  padding: 0; /* no padding */
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%; /* full width */
+  height: 3px;
+  background-color: var(--tertiary);
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+/* Dropdown menu styles */
+
+.nav-links.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 5px;
+  background-color: var(--primary-dark);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  display: none;
+  min-width: 70px;
+  z-index: 1101;
+}
+
+/* Show dropdown */
+
+.nav-links.dropdown.show {
+  display: flex;
+}
+
+/* Responsive - mobile menu */
+
+@media (max-width: 600px) {
+  /* Hide regular nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+}

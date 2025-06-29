@@ -1,0 +1,32 @@
+.footer {
+  background: var(--secondary);
+  text-align: center;
+  color: var(--tertiary);
+  font-size: var(--fs-footer);
+  font-family: var(--font-heading);
+  padding: 15px;
+}
+
+.footer .sponsors-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Equal space around each item, including edges */
+  gap: 2vw; /* Optional extra vertical/horizontal spacing */
+  padding: 25px 0;
+}
+
+.footer .sponsors-flex .image {
+  flex: 0 1 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* no extra margin so spacing is controlled by flex */
+}
+
+.footer .sponsors-flex .image img {
+  max-height: var(--sponsor-height);
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}

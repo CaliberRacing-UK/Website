@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caliber Racing</title>
+  <link rel="icon" href="../graphics/icons/favicon.png" type="image/scg+xml">
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="../styles/base.css" rel="stylesheet"/>
+  <link href="../styles/parts.css" rel="stylesheet"/>
+  <link href="../styles/header.css" rel="stylesheet"/>
+  <link href="../styles/hero.css" rel="stylesheet"/>
+  <link href="../styles/countdown.css" rel="stylesheet"/>
+  <link href="../styles/footer.css" rel="stylesheet"/>
+  <link href="../styles/section-layouts.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+  <div class="logo-area" id="logoArea">
+    <div class="hover-bg" id="hoverBg"></div>
+    <div class="logo-container" id="logoContainer">
+      <img src="../graphics/logos/second-logo.svg" alt="Caliber Logo" class="logo-default" />
+      <img src="../graphics/logos/first-logo.svg" alt="Caliber Hover Logo" class="logo-hover" />
+    </div>
+  </div>
+
+  <nav>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#team">The Team</a>
+      <a href="#car">Our Car</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-dropdown">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="../graphics/images/car-render.jpg" alt="Car Render" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Absolutely Game Changing</h1>
+    <p>We are Caliber Racing - a young ambitious team filled with a variety of different skills and ready to take on the challenges of STEM Racing</p>
+    <div class="buttons">
+      <a href="#team" class="button">Meet the Team</a>
+      <a href="explore.html" class="button">Explore the Car</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-heading">What is STEM Racing?</h2>
+      <div class="section-flex">
+
+        <!-- Image on the left -->
+        <div class="image">
+          <img src="../graphics/images/stem-racing.jpg" alt="Students racing at a competition" />
+        </div>
+
+        <!-- Text on the right -->
+        <div class="text">
+          <p>
+            STEM Racing is a global educational challenge where students design, build, and race miniature F1-style cars. It combines science, technology, engineering and maths in a hands-on, high-performance format that prepares the next generation of innovators.
+          </p>
+
+          <div class="icons">
+            <div style="text-align: center;">
+              <img src="../graphics/icons/flask.png" alt="Science" style="width: 40px; height: 40px;" />
+              <p class="label">Science</p>
+            </div>
+            <div style="text-align: center;">
+              <img src="../graphics/icons/chip.png" alt="Technology" style="width: 40px; height: 40px;" />
+              <p class="label">Technology</p>
+            </div>
+            <div style="text-align: center;">
+              <img src="../graphics/icons/gear.png" alt="Engineering" style="width: 40px; height: 40px;" />
+              <p class="label">Engineering</p>
+            </div>
+            <div style="text-align: center;">
+              <img src="../graphics/icons/ruler.png" alt="Maths" style="width: 40px; height: 40px;" />
+              <p class="label">Maths</p>
+            </div>
+          </div>
+
+          <!-- STEM Logo bottom right -->
+          <div style="margin-top: 2rem; text-align: right;">
+            <img src="../graphics/logos/stem-racing-logo.png" alt="STEM Racing Logo" style="height: 50px;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered button below image and text -->
+      <div class="buttons" style="justify-content: center; margin-top: 10px;">
+        <a href="https://www.stemracing.com" class="button" target="_blank" rel="noopener noreferrer">Visit the STEM Racing Website</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <div class="container">
+      <h2 class="section-heading">About the Team</h2>
+      <p>Meet the people who drive Caliber Racing forward:</p>
+      <div class="grid" style="--min-width: 300px">
+        <div class="card">
+          <img src="../graphics/members/harry.jpg" alt="Harry Prescott">
+          <p class="title">HARRY PRESCOTT</p>
+          <p class="subtitle">Project Manager & Sponsorship</p>
+          <p class="info">Harry keeps the team focused and on track, ensuring deadlines are met and resources are used efficiently.</p>
+        </div>
+        <div class="card">
+          <img src="../graphics/members/jacob.jpg" alt="Harry Prescott">
+          <p class="title">JACOB GRAY</p>
+          <p class="subtitle">Car Designer & Manufacturer</p>
+          <p class="info">Jacob leads the technical development of the car - from CAD to CNC. His precision engineering brings performance to the forefront.</p>
+        </div>
+        <div class="card">
+          <img src="../graphics/members/austin.jpg" alt="Austin Wilton">
+          <p class="title">AUSTIN WILTON</p>
+          <p class="subtitle">Marketing & Branding</p>
+          <p class="info">Austin crafts the team's public image and ensures that Caliber Racing's story reaches audiences through dynamic campaigns and branding.</p>
+        </div>
+        <div class="card">
+          <img src="../graphics/members/maya.jpg" alt="Maya Ellis">
+          <p class="title">MAYA ELLIS</p>
+          <p class="subtitle">Social Media & Brand Identity</p>
+          <p class="info">Maya runs Caliber Racing's digital presence, managing our social platforms, keeping fans engaged, and showcasing our journey online.</p>
+        </div>
+        <div class="card">
+          <img src="../graphics/members/leonor.jpg" alt="Leonor Almeida">
+          <p class="title">LEONOR ALMEIDA</p>
+          <p class="subtitle">Graphic Designer</p>
+          <p class="info">Leonor creates all of Caliber's visual assets - from team branding to our pit display. Her eye for detail makes the team stand out.</p>
+        </div>
+        <div class="card">
+          <img src="../graphics/members/charlotte.jpg" alt="Charlotte Gray">
+          <p class="title">CHARLOTTE GRAY</p>
+          <p class="subtitle">Livery Designer & Presentation Coordinator</p>
+          <p class="info">Unknown</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="car" class="section">
+  <div class="container">
+    <h2 class="section-heading">Our Car</h2>
+    <div class="section-flex">
+      <div class="image">
+        <video autoplay muted loop playsinline>
+          <source src="../media/car-racing.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text">
+        <p>
+          Our car is built for speed and precision on the track. It features lift-generating design elements that reduce 
+          friction between the wheels and the surface, allowing for faster, smoother movement. Lightweight and 
+          aerodynamic, it's engineered to meet regulations while maximizing efficiency. Every detail balances 
+          performance with style, making it a standout at competitions.
+        </p>
+        <!-- Explore button -->
+        <div class="buttons" style="margin-top: 2rem;">
+          <a href="explore.html" class="button">Explore the Car</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manufacturing -->
+    <h3>Manufacturing:</h3>
+    <div class="section-flex">
+      <div class="text">
+        <p>
+          Our car is designed in Fusion 360 where the design is exported for manufacturing. The STEM Racing model 
+          block is cut using a CNC machine, while lightweight parts are 3D printed in PLA. We use bearings to ensure 
+          low friction and high RPM, and carbon fiber axles for strength and lightness. Tiny neodymium magnets in the 
+          front wing make it easily replaceable. All parts are carefully painted and stickers applied before precise 
+          assembly, ensuring both durability and a polished finish.
+        </p>
+      </div>
+      <div class="image">
+        <img src="../graphics/images/manufacturing.png" alt="3D printing process" />
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <h3>Stats:</h3>
+    <div class="section-flex">
+      <div class="image">
+        <img src="../graphics/images/car-final.jpg" alt="Final car design" />
+      </div>
+      <div class="text">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="stat-item">
+            <div class="stat-icon">&#x1f3c1;</div>
+            <div>
+              <p class="label">Track Time</p>
+              <p>Fastest track time: <strong>1.210s</strong></p>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">&#x26a1;</div>
+            <div>
+              <p class="label">Top Speed</p>
+              <p>Max speed: <strong>16.5 m/s</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <h3>Team Behind the Car:</h3>
+    <div class="grid">
+      <div class="card">
+        <p class="title">Designer</p>
+        <p class="subtitle">Jacob Gray</p>
+        <p class="info">Lead designer responsible for every curve and contour.</p>
+      </div>
+      <div class="card">
+        <p class="title">Racer</p>
+        <p class="subtitle">Austin Wilton</p>
+        <p class="info">Main reaction racer pushing the limits on the track.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competitions" class="section">
+  <div class="container">
+    <h2 class="section-heading">Competitions</h2>
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Class</th>
+            <th>Track Time</th>
+            <th>Awards</th>
+            <th>Place</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>30/3/2023</td>
+            <td>Regionals (East-Anglia)</td>
+            <td>Entry</td>
+            <td>2.045s</td>
+            <td>N/A</td>
+            <td>?</td>
+            <td>First ever competition, a great experience that provided valuable lessons.</td>
+          </tr>
+          <tr>
+            <td>15/2/2024</td>
+            <td>Regionals (East-Anglia)</td>
+            <td>Development</td>
+            <td>1.384s</td>
+            <td>N/A</td>
+            <td>?</td>
+            <td>Car outperformed all classes, however no awards due to a slight manufacturing error.</td>
+          </tr>
+          <tr>
+            <td>29/1/2025</td>
+            <td>Regionals (East-Anglia)</td>
+            <td>Professional</td>
+            <td>1.259s</td>
+            <td>Fastest car<br>Best engineered car</td>
+            <td>2nd &#x1f948;</td>
+            <td>Car dominated on the track, narrowly missed 1st place but still went through to nationals.</td>
+          </tr>
+          <tr>
+            <td>26/3/2025 - 27/3/2025</td>
+            <td>Nationals</td>
+            <td>Professional</td>
+            <td>1.210s</td>
+            <td>N/A</td>
+            <td>17th</td>
+            <td>Good placement for our first time at nationals, finishing in the middle of the table.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="section-flex">
+      <div class="text">
+        <p>
+          Our highlights from nationals covers two full days of racing and 
+          judging - including pit display, portfolios, presentations, and brand 
+          identity. The event took place at the Magna Science Centre, and the 
+          video captures the excitement of the races along with our detailed pit 
+          display. Watch the video here to see us in action and experience the 
+          competition atmosphere.
+        </p>
+      </div>
+      <div class="image">
+        <video controls poster="../media/thumbnail.jpg">
+          <source src="../media/highlights.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <h3>Upcoming Competition</h3>
+    <div class="section-flex">
+      <div class="image">
+        <div class="countdown-container">
+          <div id="countdown" class="countdown-timer">Loading...</div>
+            <p class="countdown-note">Hope to see you there!</p>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            Our next race is scheduled for Wednesday 28th January 2026 at the East-Anglia regional finals. We're gearing 
+            up to improve on our performance and can't wait to hit the track again. Stay tuned for updates and 
+            behind-the-scenes sneak peeks as the event approaches!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="sponsors-flex">
+    <div class="image">
+      <img src="../graphics/sponsors/tacons.png" alt="The Tacons" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/mac.png" alt="Martham Auto Centre" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/seal-view.png" alt="Seal View" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/ssaf.png" alt="SSAF" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/brundall-manor-garage.png" alt="Brundall Manor Garage" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/chris-edmundson-ltd.png" alt="Chris Edmundson LTD" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/nngs.png" alt="Nick Nelson Garage Services" />
+    </div>
+    <div class="image">
+      <img src="../graphics/sponsors/sanderson.png" alt="Sanderson" />
+    </div>
+  </div>
+  &copy; 2025 Caliber Racing. All rights reserved.
+</footer>
+
+<!-- scripts -->
+<script src="../scripts/scroll.js"></script>
+<script src="../scripts/font-sizes.js"></script>
+<script src="../scripts/colours.js"></script>
+<script src="../scripts/header.js"></script>
+<script src="../scripts/hero.js"></script>
+<script src="../scripts/countdown.js"></script>
+
+</body>
+</html>

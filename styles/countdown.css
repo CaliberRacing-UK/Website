@@ -1,0 +1,27 @@
+    .countdown-container {
+      max-width: 500px;
+      text-align: center;
+      padding: 10px;
+      background: var(--secondary);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px var(--shadow);
+    }
+
+    .countdown-timer .unit {
+        font-family: var(--font-text);
+        font-size: var(--fs-text);
+    }
+
+    .countdown-timer {
+      font-family: var(--font-countdown);
+      font-size: var(--fs-countdown);
+      font-weight: bold;
+      color: var(--tertiary);
+      margin: 5px 0;
+    }
+
+    .countdown-note {
+      margin-top: 0;
+      font-size: var(--fs-text);
+      color: var(--primary);
+    }

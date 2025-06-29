@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('../fonts/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: rgba(0, 66, 37, 1);
+  --secondary: rgba(0, 0, 0, 1);
+  --tertiary: rgba(192, 192, 192, 1);
+  --background: var(--primary);
+  --primary-dark: rgba(0, 33, 18, 1);
+  --primary-transparent: rgba(0, 66, 37, 0.5);
+  --shadow: rgba(0, 0, 0, 0.3);
+
+  --font-heading: 'Orbitron', sans-serif;
+  --font-text: 'Inter', sans-serif;
+  --font-countdown: 'Digital-7', monospace;
+  /* --- Backups in case script fails --- */
+  /* main */
+  --fs-heading: 3.68vw;
+  --fs-subheading: 2.04vw;
+  --fs-text: 1.73vw;
+  --fs-label: 1.21vw;
+  /* hero */
+  --fs-hero-heading: 4.41vw;
+  --fs-hero-text: 1.51vw;
+  /* interactive */
+  --fs-button: 1.69vw;
+  --fs-nav: 1.21vw;
+  /* cards */
+  --fs-title: 2.29vw;
+  --fs-subtitle: 1.60vw;
+  --fs-info: 1.34vw;
+  /* countdown */
+  --fs-countdown: 4vw;
+  /* footer */
+  --fs-footer: 20px;
+  /* logo */
+  --logo-height: 3.11vw;
+  --sponsor-height: 8vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--secondary);
+  color: var(--tertiary);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .title {
+  font-family: var(--font-heading);
+  color: var(--tertiary);
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: var(--fs-hero-heading);
+  text-align: center;
+}
+
+h2, .section-heading{
+  font-size: var(--fs-heading);
+  text-align: left;
+}
+
+h3 {
+  font-size: var(--fs-subheading);
+  text-align: left;
+}
+
+p {
+  font-size: var(--fs-text);
+  font-family: var(--font-text);
+}
+
+a {
+  font-family: var(--font-text);
+}

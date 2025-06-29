@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caliber Racing - Explore the Car</title>
+  <link rel="icon" href="../graphics/icons/favicon.png" type="image/scg+xml">
+
+  <!-- styles -->
+  <link href="../styles/base.css" rel="stylesheet"/>
+  <link href="../styles/parts.css" rel="stylesheet"/>
+  <link href="../styles/header.css" rel="stylesheet"/>
+  <link href="../styles/footer.css" rel="stylesheet"/>
+  <link href="../styles/explore.css" rel="stylesheet"/>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-area" id="logoArea">
+      <div class="hover-bg" id="hoverBg"></div>
+      <div class="logo-container" id="logoContainer">
+        <img src="../graphics/logos/second-logo.svg" alt="Caliber Logo" class="logo-default" />
+        <img src="../graphics/logos/first-logo.svg" alt="Caliber Hover Logo" class="logo-hover" />
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-dropdown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="explore-wrapper">
+    <div class="model-view">
+      <model-viewer
+        src="../models/car-model.glb"
+        alt="Caliber Racing Car Model"
+        auto-rotate
+        camera-controls
+        style="width: 100%; height: 100%;"
+      >
+      </model-viewer>
+    </div>
+
+    <div class="specs-panel">
+      <div class="card">
+        <p class="title">Top Speed</p>
+        <p class="subtitle">16.5 m/s</p>
+      </div>
+      <div class="card">
+        <p class="title">Fastest Track Time</p>
+        <p class="subtitle">1.210s</p>
+      </div>
+      <div class="card">
+        <p class="title">Awards</p>
+        <p class="subtitle">Fastest Car<br>Best Engineered Car</p>
+      </div>
+      <div class="card">
+        <p class="title">Designer</p>
+        <p class="subtitle">Jacob Gray</p>
+      </div>
+      <div class="card">
+        <p class="title">Racer</p>
+        <p class="subtitle">Austin Wilton</p>
+      </div>
+      <div class="card">
+        <p class="title">Weight</p>
+        <p class="subtitle">55g</p>
+      </div>
+      <div class="card">
+        <p class="title">Length</p>
+        <p class="subtitle">225mm</p>
+      </div>
+      <div class="card">
+        <p class="title">Materials</p>
+        <p class="subtitle">Polyurethane<br>PLA filament<br>Carbon Fibre<br>Neodymium Magnets<br>Bearings</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Caliber Racing. All rights reserved.
+  </footer>
+
+  <!-- scripts -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="../scripts/font-sizes.js"></script>
+  <script src="../scripts/colours.js"></script>
+  <script src="../scripts/header.js"></script>
+</body>
+</html>
