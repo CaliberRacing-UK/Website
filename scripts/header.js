@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
+  const isOnMainPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index.html';
 
-    // Update hover background size under logo
+  // Update hover background size under logo
   function updateHoverBg() {
     if (!logoContainer || !hoverBg || !header) return;
     const logoRect = logoContainer.getBoundingClientRect();
@@ -18,7 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Smooth scroll to top on logo click
   logoContainer?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (isOnMainPage) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.location.href = '../index.html';
+    }
   });
 
   // Show hover background on mouse enter
