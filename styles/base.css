@@ -10,6 +10,7 @@
   --secondary: rgba(0, 0, 0, 1);
   --tertiary: rgba(192, 192, 192, 1);
   --background: var(--primary);
+  --primary-light: rgba(0, 132, 74, 1);
   --primary-dark: rgba(0, 33, 18, 1);
   --primary-transparent: rgba(0, 66, 37, 0.5);
   --shadow: rgba(0, 0, 0, 0.3);
