@@ -1,0 +1,51 @@
+/* Progress section container */
+.progress-container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Label above the progress bar */
+.progress-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: var(--font-text);
+  font-size: var(--fs-subtitle);
+  color: var(--tertiary);
+}
+
+/* Progress bar styling */
+.progress-container progress {
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 8px;
+  /* for Firefox to apply border-radius */
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Progress bar for WebKit browsers */
+progress::-webkit-progress-bar {
+  background-color: var(--primary-dark);
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--primary-light);
+  border-radius: 8px;
+}
+
+/* Progress bar for Firefox */
+progress::-moz-progress-bar {
+  background-color: var(--primary-light);
+  border-radius: 8px;
+}
+
+/* Text under the progress bar */
+.progress-container .progress-text {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--tertiary);
+  font-size: var(--fs-info);
+}
