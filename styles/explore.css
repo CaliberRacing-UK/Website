@@ -33,7 +33,7 @@ html, body {
     .specs-panel::after {
       content: '';
       flex-shrink: 0;
-      height: 4rem;
+      height: 60px;
     }
 
     /* Mobile layout */
