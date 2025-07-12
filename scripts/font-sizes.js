@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sizeMap = {
+  const sizeMap = {
     '--fs-heading': [29, 56],
     '--fs-subheading': [24, 40],
     '--fs-text': [16, 24],
@@ -43,4 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeunload', () => {
     applySizes();
   });
-});

@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
   // Cache DOM elements
   const logoContainer = document.getElementById('logoContainer');
   const hoverBg = document.getElementById('hoverBg');
@@ -68,4 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks?.classList.remove('dropdown', 'show');
     }
   });
-});

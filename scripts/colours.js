@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     // Set derived colors based on --primary variable
     function setColors() {
         const root = document.documentElement;
@@ -20,4 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
         setColors();
     });
-});

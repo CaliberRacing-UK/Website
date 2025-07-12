@@ -13,6 +13,7 @@
   <link href="styles/header.css" rel="stylesheet"/>
   <link href="styles/hero.css" rel="stylesheet"/>
   <link href="styles/countdown.css" rel="stylesheet"/>
+  <link href="styles/carousel.css" rel="stylesheet"/>
   <link href="styles/progress.css" rel="stylesheet"/>
   <link href="styles/footer.css" rel="stylesheet"/>
   <link href="styles/section-layouts.css" rel="stylesheet"/>
@@ -114,13 +115,13 @@
       <p>Meet the people who drive Caliber Racing forward:</p>
       <div class="grid" style="--min-width: 300px">
         <div class="card">
-          <img src="graphics/members/harry.jpg" alt="Harry Prescott">
+          <img src="graphics/members/harry.png" alt="Harry Prescott">
           <p class="title">HARRY PRESCOTT</p>
           <p class="subtitle">Project Manager & Sponsorship and Finance</p>
           <p class="info">Harry keeps the team focused and on track, ensuring deadlines are met and resources are used efficiently.</p>
         </div>
         <div class="card">
-          <img src="graphics/members/jacob.jpg" alt="Harry Prescott">
+          <img src="graphics/members/jacob.png" alt="Jacob Gray">
           <p class="title">JACOB GRAY</p>
           <p class="subtitle">Car Designer & Manufacturer</p>
           <p class="info">Jacob leads the technical development of the car - from CAD to CNC. His precision engineering brings performance to the forefront.</p>
@@ -141,13 +142,13 @@
           <img src="graphics/members/leonor.jpg" alt="Leonor Almeida">
           <p class="title">LEONOR ALMEIDA</p>
           <p class="subtitle">Pit Display Engineer</p>
-          <p class="info">Leonor creates all of Caliber's visual assets - from team branding to our pit display. Her eye for detail makes the team stand out.</p>
+          <p class="info">Leonor designs Caliber Racing's visual presence, bringing our pit display to life through eye-catching layouts and immersive experiences.</p>
         </div>
         <div class="card">
-          <img src="graphics/members/charlotte.jpg" alt="Charlotte Gray">
+          <img src="graphics/members/charlotte.png" alt="Charlotte Gray">
           <p class="title">CHARLOTTE GRAY</p>
           <p class="subtitle">Graphics Designer</p>
-          <p class="info">Unknown</p>
+          <p class="info">Charlotte designs the car livery and styles the team portfolio. She also leads the presentation setup, making sure Caliber's work looks as polished as it performs.</p>
         </div>
       </div>
     </div>
@@ -331,17 +332,51 @@
   </div>
 </section>
 
+<section id="sponsors" class="section">
+  <div class="container">
+    <h2 class="section-heading">Our Sponsors</h2>
+    <p>We deeply appreciate our sponsors who make this journey possible.</p>
+    <div class="carousel">
+      <button class="carousel-arrow left" aria-label="Previous">&#10094;</button>
+
+      <div class="carousel-track">
+        <!-- Sponsor images will be inserted here dynamically -->
+      </div>
+
+      <button class="carousel-arrow right" aria-label="Next">&#10095;</button>
+    </div>
+
+    <div class="carousel-text">
+      <h3 id="sponsor-name" style="text-align: center"></h3>
+      <p id="sponsor-info"></p>
+      <div class="grid">
+        <div class="card">
+          <p class="title">Supporting since</p>
+          <p id="sponsor-stats-time" class="info">Loading...</p>
+        </div>
+        <div class="card">
+          <p class="title">Hierarchy level</p>
+          <p id="sponsor-stats-level" class="info">Loading...</p>
+        </div>
+      </div>
+
+    <p>
+      Interested in joining us? See our <a href="#become-a-sponsor">Become a Sponsor</a> section below.
+    </p>
+  </div>
+</section>
+
 <section id="support" class="section">
   <div class="container">
     <h2 class="section-heading">Support Us</h2>
     <p>
-      Caliber Racing is a dedicated school team competing against some of the best in the country. We're driven by passion, but with 
+      We are a dedicated school team competing against some of the best in the country. We're driven by passion, but with 
       limited equipment and funding, we rely on the generosity of our supporters to innovate, improve, and push the boundaries of 
       student engineering. We will deeply appreciate any support from you or your company and ensure your efforts are not wasted.
     </p>
 
     <!-- SPONSOR -->
-    <h3>Become a Sponsor</h3>
+    <h3 id="become-a-sponsor">Become a Sponsor</h3>
     <div class="section-flex">
       <p>
         Join us in powering the next generation of STEM talent. By sponsoring Caliber Racing, you'll be supporting innovation, 
@@ -353,13 +388,13 @@
       </div>
       <div class="text">
         <p>
-          We offer a four-tier sponsorship system that delivers valuable publicity while remaining accessible to businesses 
+          We offer a three-tier sponsorship system that delivers valuable publicity while remaining accessible to businesses 
           of all sizes. Whether local or national, there's a package to suit your goals and budget.
           <br><br>
           Download our Sponsor Prospectus below to explore each level further and find the right fit for your company.
         </p>
         <a href="/docs/sponsorship-prospectus.pdf" target="_blank" rel="noopener" class="button">
-        Download Sponsorship Prospectus
+        Download Sponsor Prospectus
         </a>
       </div>
       <p>
@@ -395,13 +430,46 @@
     <h3>Follow Our Journey</h3>
     <div class="section-flex">
       <p>
-        Stay connected by following us on social media! We regularly share behind-the-scenes content, race updates, and team achievements. Your support online helps us grow and reach new opportunities.
+        Join our community online! Every like, share, and comment helps 
+        us gain visibility and motivates us as we prepare for upcoming 
+        competitions and challenges. Your support plays a key role in 
+        expanding our reach and creating a ripple effect — the more 
+        people who see us, the more support we can build, thanks to 
+        your help. Check out our channels below:
       </p>
-      <a href="https://instagram.com/caliberracing" target="_blank" rel="noopener" aria-label="Instagram" class="button">📷 Instagram</a>
-      <a href="https://twitter.com/caliberracing" target="_blank" rel="noopener" aria-label="Twitter" class="button">🐦 Twitter</a>
-      <a href="https://facebook.com/caliberracing" target="_blank" rel="noopener" aria-label="Facebook" class="button">📘 Facebook</a>
+
+      <div class="image">
+        <img src="graphics/images/instagram.png" alt="Picture of Caliober Racing's Instagram">
+      </div>
+
+      <div class="text">
+
+        <p>
+        We post regularly with updates on our progress, 
+        behind-the-scenes moments, and highlights from events. 
+        Whether it's new design breakthroughs, competition prep, 
+        or celebrating big wins — we love sharing the journey with you.
+        </p>
+
+        <div class="grid" style="--min-width: 100px; --gap: 3vw">
+          <a href="https://www.instagram.com/caliber_racing_" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="graphics/logos/instagram-logo.png" alt="Instagram" class="social-icon" />
+          </a>
+
+          <a href="https://www.tiktok.com/@caliberracing" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="graphics/logos/tiktok-logo.png" alt="TikTok" class="social-icon" />
+          </a>
+        </div>
+
+      </div>
+
       <p>
-        Every follow, like, and share helps amplify our story and inspire the next generation of engineers.
+        By following us, you become part of a vibrant community  
+        that supports STEM education and innovation. Your engagement 
+        not only inspires our team, but also helps amplify our presence 
+        far and wide — increasing our chances of gaining sponsors, 
+        boosting awareness, and showing the world the dedication behind 
+        every design, build, and race.
       </p>
     </div>
   </div>
@@ -440,13 +508,14 @@
 </footer>
 
 <!-- scripts -->
-<script src="scripts/scroll.js"></script>
-<script src="scripts/font-sizes.js"></script>
-<script src="scripts/colours.js"></script>
-<script src="scripts/header.js"></script>
-<script src="scripts/hero.js"></script>
-<script src="scripts/countdown.js"></script>
-<script src="scripts/progress.js"></script>
+<script defer src="scripts/scroll.js"></script>
+<script defer src="scripts/font-sizes.js"></script>
+<script defer src="scripts/colours.js"></script>
+<script defer src="scripts/header.js"></script>
+<script defer src="scripts/hero.js"></script>
+<script defer src="scripts/countdown.js"></script>
+<script defer src="scripts/carousel.js"></script>
+<script defer src="scripts/progress.js"></script>
 
 </body>
 </html>

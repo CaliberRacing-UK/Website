@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
     const countdownEl = document.getElementById("countdown");
     const nextCompDate = new Date(2026, 0, 28, 9, 0); // Jan 28th 2026 9:00am
 
@@ -26,4 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateCountdown(); // initial call
     const timer = setInterval(updateCountdown, 1000);
-});

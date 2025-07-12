@@ -51,9 +51,11 @@
 
 .grid {
   --min-width: 300px; /* default minimum column width */
+  --gap: 2rem;
 
   display: grid;
-  gap: 2rem;
+  margin: 2rem 0;
+  gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
 }
 
@@ -85,6 +87,17 @@
 .button:hover {
   background: var(--tertiary);
   color: var(--secondary);
+}
+
+.social-icon {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
 }
 
 .card {
