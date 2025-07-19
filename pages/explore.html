@@ -36,16 +36,19 @@
   </header>
 
   <div class="explore-wrapper">
-    <div class="model-view">
-      <model-viewer
-        id="carModel"
-        src="../models/car-model2.glb"
-        alt="Caliber Racing Car Model"
-        auto-rotate
-        camera-controls
-        style="width: 100%; height: 100%; background-color: var(--secondary)"
-      >
-      </model-viewer>
+    <div class="model-container">
+      <div class="model-loading" id="modelLoading">Loading</div>
+      <div class="model-view">
+        <model-viewer
+          id="carModel"
+          src="../models/car-model2.glb"
+          alt="Caliber Racing Car Model"
+          auto-rotate
+          camera-controls
+          style="width: 100%; height: 100%; background-color: var(--secondary)"
+        >
+        </model-viewer>
+      </div>
     </div>
 
     <div class="specs-panel">
@@ -89,5 +92,6 @@
   <script defer src="../scripts/font-sizes.js"></script>
   <script defer src="../scripts/colours.js"></script>
   <script defer src="../scripts/header.js"></script>
+  <script defer src="../scripts/model.js"></script>
 </body>
 </html>

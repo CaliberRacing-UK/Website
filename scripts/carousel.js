@@ -1,35 +1,63 @@
 const sponsors = [
   {
-    name: "Sponsor A",
+    name: "The Tacons",
     image: "graphics/sponsors/tacons.png",
-    description: "Supporting us since 2020, Sponsor A helps us innovate with confidence.",
-    time: "Sponsoring for 3 years",
-    level: "Platinum"
+    description: "The Tacons have been a huge help by donating to us.",
+    time: "2024",
+    level: "N/A"
   },
   {
-    name: "Sponsor B",
+    name: "SSAF",
     image: "graphics/sponsors/ssaf.png",
-    description: "Sponsor B powers our technical advancements with generous support.",
-    time: "Sponsoring for 2 years",
-    level: "Gold"
+    description: "SSAF have been a big part of our success by printing our Nationals pit display for free! We are very greatful for their support.",
+    time: "2023",
+    level: "N/A"
   },
   {
-    name: "Sponsor C",
+    name: "Chris Edmundson LTD",
     image: "graphics/sponsors/chris-edmundson-ltd.png",
-    description: "Thanks to Sponsor C, we can keep pushing the limits on design.",
-    time: "Sponsoring for 1 year",
-    level: "Silver"
+    description: "Chris Edmundson LTD have been crucial in our success by donating to us.",
+    time: "2024",
+    level: "N/A"
   },
   {
-    name: "Sponsor D",
+    name: "NNGS",
     image: "graphics/sponsors/nngs.png",
-    description: "Sponsor D's commitment fuels our passion for STEM education.",
-    time: "Sponsoring since this year",
-    level: "Bronze"
+    description: "Nick Nelson's Garage Services have helped us out by donating to us.",
+    time: "2024",
+    level: "N/A"
+  },
+  {
+    name: "Brundall Manor Garage",
+    image: "graphics/sponsors/brundall-manor-garage.png",
+    description: "The tacons have been a huge help by donating to us.",
+    time: "2024",
+    level: "N/A"
+  },
+  {
+    name: "Seal View",
+    image: "graphics/sponsors/seal-view.png",
+    description: "SSAF have been a big part of our success by printing our pit display for free!",
+    time: "2024",
+    level: "N/A"
+  },
+  {
+    name: "Sanderson",
+    image: "graphics/sponsors/sanderson.png",
+    description: "Sanderson lower sixth",
+    time: "2024",
+    level: "N/A"
+  },
+  {
+    name: "MAC",
+    image: "graphics/sponsors/mac.png",
+    description: "Martham auto centre have been a loyal sponsor from the start and have paid for our shirts aswell as making genorous donations. Without them we wouldn't be where we are now.",
+    time: "2022",
+    level: "N/A"
   }
 ];
 
-let currentIndex = 0;
+let currentIndex = Math.round(Math.random()*8);
 
 const track = document.querySelector('.carousel-track');
 const nameEl = document.getElementById('sponsor-name');
