@@ -1,25 +1,27 @@
     const model = document.getElementById('carModel');
     const loadingOverlay = document.getElementById('modelLoading');
 
-    // Animate "Loading" text
     const loadingTexts = ["Loading", "Loading.", "Loading..", "Loading..."];
     let index = 0;
+
     const interval = setInterval(() => {
       loadingOverlay.textContent = loadingTexts[index];
       index = (index + 1) % loadingTexts.length;
     }, 400);
 
-    // Handle when model is fully loaded
-    const hideLoading = () => {
+    function hideOverlay() {
       clearInterval(interval);
       loadingOverlay.style.display = 'none';
-    };
+    }
 
-    model.addEventListener('load', hideLoading);
+    // Most reliable event for when the model is rendered
+    model.addEventListener('model-visibility', () => {
+      hideOverlay();
+    });
 
-    // Fallback in case 'load' doesn't fire (e.g. cached fast load)
+    // Fallback in case event is missed (caching etc.)
     setTimeout(() => {
-      if (model.loaded || model.modelIsVisible) {
-        hideLoading();
+      if (model.modelIsVisible || model.loaded) {
+        hideOverlay();
       }
-    }, 2000);
+    }, 3000);
