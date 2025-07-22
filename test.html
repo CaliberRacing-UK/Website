@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Model Loading Test</title>
+  <style>
+    .model-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background: #f0f0f0;
+    }
+
+    .model-loading {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+      z-index: 2;
+      transition: opacity 0.3s ease;
+    }
+
+    .model-loading.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="model-container">
+    <div class="model-loading" id="modelLoading">Loading</div>
+    <model-viewer
+      id="carModel"
+      src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+      alt="Test Model"
+      auto-rotate
+      camera-controls
+      style="width: 100%; height: 100%; background-color: #ddd;"
+    ></model-viewer>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const model = document.getElementById("carModel");
+      const loadingOverlay = document.getElementById("modelLoading");
+
+      const loadingTexts = ["Loading", "Loading.", "Loading..", "Loading..."];
+      let index = 0;
+
+      const interval = setInterval(() => {
+        loadingOverlay.textContent = loadingTexts[index];
+        index = (index + 1) % loadingTexts.length;
+      }, 400);
+
+      const hideOverlay = () => {
+        clearInterval(interval);
+        loadingOverlay.classList.add("hidden");
+        setTimeout(() => {
+          loadingOverlay.style.display = "none";
+        }, 400);
+      };
+
+      // This fires when the model is visually rendered
+      model.addEventListener("model-visibility", hideOverlay);
+
+      // Fallback
+      setTimeout(() => {
+        if (model.modelIsVisible || model.loaded) {
+          hideOverlay();
+        }
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
