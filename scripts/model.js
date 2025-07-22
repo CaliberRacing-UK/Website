@@ -1,27 +1,28 @@
-    const model = document.getElementById('carModel');
-    const loadingOverlay = document.getElementById('modelLoading');
+      const model = document.getElementById("carModel");
+      const loadingOverlay = document.getElementById("modelLoading");
 
-    const loadingTexts = ["Loading", "Loading.", "Loading..", "Loading..."];
-    let index = 0;
+      const loadingTexts = ["Loading", "Loading.", "Loading..", "Loading..."];
+      let index = 0;
 
-    const interval = setInterval(() => {
-      loadingOverlay.textContent = loadingTexts[index];
-      index = (index + 1) % loadingTexts.length;
-    }, 400);
+      const interval = setInterval(() => {
+        loadingOverlay.textContent = loadingTexts[index];
+        index = (index + 1) % loadingTexts.length;
+      }, 400);
 
-    function hideOverlay() {
-      clearInterval(interval);
-      loadingOverlay.style.display = 'none';
-    }
+      const hideOverlay = () => {
+        clearInterval(interval);
+        loadingOverlay.classList.add("hidden");
+        setTimeout(() => {
+          loadingOverlay.style.display = "none";
+        }, 400);
+      };
 
-    // Most reliable event for when the model is rendered
-    model.addEventListener('model-visibility', () => {
-      hideOverlay();
-    });
+      // This fires when the model is visually rendered
+      model.addEventListener("model-visibility", hideOverlay);
 
-    // Fallback in case event is missed (caching etc.)
-    setTimeout(() => {
-      if (model.modelIsVisible || model.loaded) {
-        hideOverlay();
-      }
-    }, 3000);
+      // Fallback
+      setTimeout(() => {
+        if (model.modelIsVisible || model.loaded) {
+          hideOverlay();
+        }
+      }, 3000);
