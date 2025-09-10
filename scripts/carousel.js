@@ -2,56 +2,56 @@ const sponsors = [
   {
     name: "The Tacons",
     image: "graphics/sponsors/tacons.png",
-    description: "The Tacons have been a huge help by donating to us.",
-    time: "2024",
+    description: "The Tacons are a local farm shop which have generously donated £100.",
+    time: "February 2025",
     level: "N/A"
   },
   {
     name: "SSAF",
     image: "graphics/sponsors/ssaf.png",
-    description: "SSAF have been a big part of our success by printing our Nationals pit display for free! We are very greatful for their support.",
+    description: "SSAF are a local company which produce custom printed products. They sponsored us and our helping us by printing our shirts for a significantly lower price than advertised to others who they do not sponsor.",
     time: "2023",
     level: "N/A"
   },
   {
     name: "Chris Edmundson LTD",
     image: "graphics/sponsors/chris-edmundson-ltd.png",
-    description: "Chris Edmundson LTD have been crucial in our success by donating to us.",
+    description: "Chris Edmondson LTD is a local master carpenter for boats. He gave us wooden boards to use for our pit display.",
     time: "2024",
     level: "N/A"
   },
   {
     name: "NNGS",
     image: "graphics/sponsors/nngs.png",
-    description: "Nick Nelson's Garage Services have helped us out by donating to us.",
+    description: "Nick Nelson Garage Services are a company which sell garage equipment. They are donating us £125.",
     time: "2024",
     level: "N/A"
   },
   {
     name: "Brundall Manor Garage",
     image: "graphics/sponsors/brundall-manor-garage.png",
-    description: "The tacons have been a huge help by donating to us.",
+    description: "Brundall Manor Garage are a garage in our local area. They sponsored us and gave us £50.",
     time: "2024",
     level: "N/A"
   },
   {
     name: "Seal View",
     image: "graphics/sponsors/seal-view.png",
-    description: "SSAF have been a big part of our success by printing our pit display for free!",
-    time: "2024",
+    description: "Seal View is a local café which we have seen sponsor other local clubs, so we asked them to sponsor us, and they have given us £50.",
+    time: "July 2024",
     level: "N/A"
   },
   {
     name: "Sanderson",
     image: "graphics/sponsors/sanderson.png",
-    description: "Sanderson lower sixth",
+    description: "Sanderson lower sixth are a group of students which have kindly offered to sponsor us.",
     time: "2024",
     level: "N/A"
   },
   {
     name: "MAC",
     image: "graphics/sponsors/mac.png",
-    description: "Martham auto centre have been a loyal sponsor from the start and have paid for our shirts aswell as making genorous donations. Without them we wouldn't be where we are now.",
+    description: "Martham Auto Centre are a local garage within our community which have offered to sponsor our team. They are helping us by paying for our merchandise.",
     time: "2022",
     level: "N/A"
   }
