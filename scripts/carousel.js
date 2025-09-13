@@ -45,7 +45,7 @@ const sponsors = [
     name: "Sanderson",
     image: "graphics/sponsors/sanderson.png",
     description: "Sanderson lower sixth are a group of students which have kindly offered to sponsor us.",
-    time: "2024",
+    time: "February 2025",
     level: "N/A"
   },
   {
